@@ -23,10 +23,31 @@ npm run preview   # Produktions-Build lokal ansehen
 ## Aufbau
 
 - **Stack:** Vite + React + TypeScript + Tailwind CSS, eine einzige SPA.
+- **PWA / Offline:** installierbar auf dem Handy, funktioniert vollständig ohne Internet
+  (Service Worker via `vite-plugin-pwa`, alle Assets vorab gecacht).
 - **Fortschritt:** wird in `localStorage` gespeichert (Schlüssel `dgt-progress-v1`) und bleibt
   ohne Server erhalten. Reset ist pro Thema und für den Gesamtfortschritt möglich.
 - **Drei Module** mit insgesamt 18 Themen; jedes Thema folgt der festen Reihenfolge
   **Grammatik → Beispiele → Anwendung → Übungen** (Grammatik zuerst, kein Discovery-Learning).
+
+## Als App aufs Handy installieren (offline nutzen)
+
+Die App ist eine **PWA** und lässt sich ohne App-Store direkt vom Browser installieren. Danach
+läuft sie vollständig **ohne WLAN/Internet**.
+
+1. App einmalig **online** öffnen (z. B. den bereitgestellten Produktions-Build / die gehostete
+   URL). Unten erscheint kurz der Hinweis „App ist offline einsatzbereit“ — dann sind alle Inhalte
+   im Gerät gecacht.
+2. **Zum Startbildschirm hinzufügen:**
+   - **iPhone/iPad (Safari):** Teilen-Symbol → „Zum Home-Bildschirm“.
+   - **Android (Chrome):** Menü (⋮) → „App installieren“ bzw. „Zum Startbildschirm hinzufügen“.
+3. Ab jetzt startet die App wie eine native App im Vollbild und funktioniert im Flugmodus/ohne
+   Netz. Der Lernfortschritt wird lokal auf dem Gerät gespeichert.
+
+> Hinweis: Ein Service Worker erfordert eine sichere Herkunft — also `https://…` oder
+> `http://localhost`. Zum lokalen Prüfen: `npm run build && npm run preview` und die
+> `localhost`-Adresse im Handy-Browser öffnen (Gerät im selben Netz), einmal laden, dann kann das
+> Netz getrennt werden.
 
 ### Themenübersicht
 

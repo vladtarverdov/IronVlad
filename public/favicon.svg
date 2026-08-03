@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#7a1f2b"/>
+  <rect x="40" y="40" width="432" height="432" rx="28" fill="none" stroke="#f6ecee" stroke-opacity="0.28" stroke-width="6"/>
+  <text x="50%" y="52%" text-anchor="middle" dominant-baseline="central"
+        font-family="Georgia, 'Times New Roman', serif" font-weight="700"
+        font-size="340" fill="#faf8f4">D</text>
+  <rect x="166" y="392" width="180" height="12" rx="6" fill="#f6ecee" fill-opacity="0.9"/>
+</svg>

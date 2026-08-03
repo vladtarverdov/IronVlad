@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { module } from './data'
 import { useProgress } from './useProgress'
 import HinweisBanner from './components/HinweisBanner'
+import PwaStatus from './components/PwaStatus'
 import Startseite from './pages/Startseite'
 import Themenseite from './pages/Themenseite'
 
@@ -57,6 +58,7 @@ export default function App() {
       <footer className="border-t border-ink/10 py-6 text-center text-xs text-ink/40">
         Deutsch-Grammatik-Trainer · C1–C2 · vollständig offline · Fortschritt lokal gespeichert
       </footer>
+      <PwaStatus />
     </div>
   )
 }
