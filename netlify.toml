@@ -1,0 +1,39 @@
+# Netlify-Konfiguration für den Deutsch-Grammatik-Trainer (Vite + PWA).
+# Netlify liest diese Datei automatisch beim „Import from Git" — es sind
+# keine manuellen Einstellungen im Dashboard nötig.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # Feste Node-Version für reproduzierbare Builds.
+  NODE_VERSION = "20"
+
+# SPA-Fallback: unbekannte Pfade liefern index.html (Status 200),
+# damit direkte Aufrufe und Reloads funktionieren. Statische Dateien
+# (JS/CSS/Icons) werden zuerst ausgeliefert und nicht umgeschrieben.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Service Worker darf nicht dauerhaft gecacht werden, sonst erhalten
+# Nutzer keine Updates. Immer frisch validieren lassen.
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/manifest.webmanifest"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    Content-Type = "application/manifest+json"
+
+# Gehashte Build-Assets (Dateiname enthält Fingerprint) dürfen lange
+# gecacht werden.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
