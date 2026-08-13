@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { dimensionen, gesamtzahlVokabeln } from '../vokabular'
+import { dimensionen } from '../vokabular'
 
 interface Props {
   onZurueck: () => void
@@ -37,6 +37,7 @@ export default function WortschatzSeite({ onZurueck }: Props) {
   }, [dimension, gruppeId, q])
 
   const treffer = gruppen.reduce((s, g) => s + g.eintraege.length, 0)
+  const gesamtDimension = dimension.gruppen.reduce((s, g) => s + g.eintraege.length, 0)
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-10">
@@ -110,7 +111,7 @@ export default function WortschatzSeite({ onZurueck }: Props) {
       </div>
 
       <p className="mb-4 text-xs text-ink/50">
-        {q ? `${treffer} Treffer` : `${gesamtzahlVokabeln} Vokabeln · nach Wortart und nach Thema`}
+        {q ? `${treffer} Treffer` : `${gesamtDimension} Einträge · ${dimension.label.toLowerCase()}`}
       </p>
 
       {gruppen.length === 0 && (
@@ -120,40 +121,49 @@ export default function WortschatzSeite({ onZurueck }: Props) {
       )}
 
       <div className="space-y-8">
-        {gruppen.map((g) => (
-          <section key={g.id}>
-            <div className="mb-3 border-b border-ink/10 pb-2">
-              <h2 className="font-serif text-xl font-semibold text-ink">{g.titel}</h2>
-              <p className="mt-0.5 text-sm text-ink/60">{g.beschreibung}</p>
-            </div>
+        {gruppen.map((g) => {
+          const hatBeispiel = g.eintraege.some((e) => e.beispiel)
+          return (
+            <section key={g.id}>
+              <div className="mb-3 border-b border-ink/10 pb-2">
+                <h2 className="font-serif text-xl font-semibold text-ink">{g.titel}</h2>
+                <p className="mt-0.5 text-sm text-ink/60">{g.beschreibung}</p>
+              </div>
 
-            <div className="overflow-x-auto rounded-lg border border-ink/10 bg-white/70">
-              <table className="w-full border-collapse text-left text-[0.95rem]">
-                <thead>
-                  <tr className="border-b border-ink/10 text-[0.7rem] uppercase tracking-wide text-ink/50">
-                    <th className="px-3 py-2 font-semibold sm:px-4">Deutsch</th>
-                    <th className="px-3 py-2 font-semibold sm:px-4">English</th>
-                    <th className="hidden px-3 py-2 font-semibold sm:table-cell sm:px-4">Beispiel</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {g.eintraege.map((e, i) => (
-                    <tr
-                      key={i}
-                      className="border-b border-ink/5 align-top last:border-0 hover:bg-bordeaux-tint/25"
-                    >
-                      <td className="px-3 py-2.5 font-medium text-bordeaux sm:px-4">{e.de}</td>
-                      <td className="px-3 py-2.5 text-ink/80 sm:px-4">{e.en}</td>
-                      <td className="hidden px-3 py-2.5 font-serif italic text-ink/65 sm:table-cell sm:px-4">
-                        {e.beispiel}
-                      </td>
+              <div className="overflow-x-auto rounded-lg border border-ink/10 bg-white/70">
+                <table className="w-full border-collapse text-left text-[0.95rem]">
+                  <thead>
+                    <tr className="border-b border-ink/10 text-[0.7rem] uppercase tracking-wide text-ink/50">
+                      <th className="px-3 py-2 font-semibold sm:px-4">Deutsch</th>
+                      <th className="px-3 py-2 font-semibold sm:px-4">English</th>
+                      {hatBeispiel && (
+                        <th className="hidden px-3 py-2 font-semibold sm:table-cell sm:px-4">
+                          Beispiel
+                        </th>
+                      )}
                     </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </section>
-        ))}
+                  </thead>
+                  <tbody>
+                    {g.eintraege.map((e, i) => (
+                      <tr
+                        key={i}
+                        className="border-b border-ink/5 align-top last:border-0 hover:bg-bordeaux-tint/25"
+                      >
+                        <td className="px-3 py-2.5 font-medium text-bordeaux sm:px-4">{e.de}</td>
+                        <td className="px-3 py-2.5 text-ink/80 sm:px-4">{e.en}</td>
+                        {hatBeispiel && (
+                          <td className="hidden px-3 py-2.5 font-serif italic text-ink/65 sm:table-cell sm:px-4">
+                            {e.beispiel}
+                          </td>
+                        )}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          )
+        })}
       </div>
     </div>
   )
