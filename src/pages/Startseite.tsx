@@ -70,8 +70,8 @@ export default function Startseite({ progress, onOeffne, onWortschatz }: Props) 
             Wortschatz zum Sprechen (C1–C2)
           </span>
           <span className="mt-0.5 block text-sm text-ink/65">
-            Verben, Adjektive, Nomen, Konnektoren, Redemittel und Redewendungen — vom
-            Alltagsgespräch bis zur Diskussion.
+            Deutsch–English, nach Wortart und nach Thema (Meinung, Diskussion, Alltag, Beruf,
+            Small Talk, Konflikte).
           </span>
         </span>
         <span aria-hidden className="text-bordeaux/70 group-hover:translate-x-0.5">

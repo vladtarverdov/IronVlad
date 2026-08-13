@@ -49,12 +49,12 @@ export interface Modul {
 // --- Wortschatz für das Sprechen auf C1–C2-Niveau ---------------------------
 
 export interface VokabelEintrag {
-  /** Das Wort, die Wendung oder das Redemittel. */
-  wort: string
-  /** Bedeutung / Verwendung in einfacher Sprache. */
-  bedeutung: string
-  /** Ein idiomatischer Beispielsatz. */
-  beispiel: string
+  /** Das deutsche Wort, die Wendung oder das Redemittel. */
+  de: string
+  /** Englische Übersetzung. */
+  en: string
+  /** Optionaler idiomatischer Beispielsatz. */
+  beispiel?: string
 }
 
 export interface VokabelGruppe {
@@ -62,4 +62,11 @@ export interface VokabelGruppe {
   titel: string
   beschreibung: string
   eintraege: VokabelEintrag[]
+}
+
+/** Eine Ordnungsdimension des Wortschatzes (nach Wortart bzw. nach Thema). */
+export interface VokabelDimension {
+  id: string
+  label: string
+  gruppen: VokabelGruppe[]
 }

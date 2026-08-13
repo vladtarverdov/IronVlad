@@ -1,33 +1,40 @@
 import { useMemo, useState } from 'react'
-import { vokabular, gesamtzahlVokabeln } from '../vokabular'
+import { dimensionen, gesamtzahlVokabeln } from '../vokabular'
 
 interface Props {
   onZurueck: () => void
 }
 
 export default function WortschatzSeite({ onZurueck }: Props) {
+  const [dimensionId, setDimensionId] = useState<string>(dimensionen[0].id)
   const [gruppeId, setGruppeId] = useState<string>('alle')
   const [suche, setSuche] = useState('')
 
+  const dimension = dimensionen.find((d) => d.id === dimensionId) ?? dimensionen[0]
   const q = suche.trim().toLowerCase()
 
-  // Sichtbare Gruppen nach Filter + Suche bestimmen.
+  // Beim Wechsel der Dimension die Gruppenauswahl zurücksetzen.
+  const waehleDimension = (id: string) => {
+    setDimensionId(id)
+    setGruppeId('alle')
+  }
+
   const gruppen = useMemo(() => {
-    return vokabular
+    return dimension.gruppen
       .filter((g) => gruppeId === 'alle' || g.id === gruppeId)
       .map((g) => ({
         ...g,
         eintraege: q
           ? g.eintraege.filter(
               (e) =>
-                e.wort.toLowerCase().includes(q) ||
-                e.bedeutung.toLowerCase().includes(q) ||
-                e.beispiel.toLowerCase().includes(q),
+                e.de.toLowerCase().includes(q) ||
+                e.en.toLowerCase().includes(q) ||
+                (e.beispiel ?? '').toLowerCase().includes(q),
             )
           : g.eintraege,
       }))
       .filter((g) => g.eintraege.length > 0)
-  }, [gruppeId, q])
+  }, [dimension, gruppeId, q])
 
   const treffer = gruppen.reduce((s, g) => s + g.eintraege.length, 0)
 
@@ -47,11 +54,34 @@ export default function WortschatzSeite({ onZurueck }: Props) {
           Wortschatz zum Sprechen (C1–C2)
         </h1>
         <p className="mt-2 max-w-prose text-ink/70">
-          Verben, Adjektive, Nomen, Konnektoren, Redemittel und Redewendungen für sicheres,
-          natürliches Sprechen — vom Alltagsgespräch bis zur Diskussion. Nach Wortart und Anlass
-          gruppiert, damit du gezielt lernen kannst.
+          Deutsch mit englischer Übersetzung — für sicheres, natürliches Sprechen vom
+          Alltagsgespräch bis zur Diskussion. Wähle die Ordnung <strong>nach Wortart</strong> oder{' '}
+          <strong>nach Thema</strong>.
         </p>
       </header>
+
+      {/* Dimension: Wortart / Thema */}
+      <div
+        className="mb-4 inline-flex rounded-lg border border-ink/15 bg-white/60 p-0.5"
+        role="tablist"
+        aria-label="Ordnung des Wortschatzes"
+      >
+        {dimensionen.map((d) => (
+          <button
+            key={d.id}
+            role="tab"
+            aria-selected={dimensionId === d.id}
+            onClick={() => waehleDimension(d.id)}
+            className={`rounded-md px-4 py-1.5 text-sm font-medium transition-colors ${
+              dimensionId === d.id
+                ? 'bg-bordeaux text-white'
+                : 'text-ink/65 hover:text-bordeaux'
+            }`}
+          >
+            {d.label}
+          </button>
+        ))}
+      </div>
 
       {/* Suche */}
       <div className="mb-4">
@@ -61,7 +91,7 @@ export default function WortschatzSeite({ onZurueck }: Props) {
             type="search"
             value={suche}
             onChange={(e) => setSuche(e.target.value)}
-            placeholder="Suchen … (Wort, Bedeutung oder Beispiel)"
+            placeholder="Suchen … (Deutsch, English oder Beispiel)"
             className="w-full rounded-md border border-ink/15 bg-white/70 px-3 py-2 text-[0.95rem] text-ink placeholder:text-ink/35 focus:border-bordeaux"
           />
         </label>
@@ -72,7 +102,7 @@ export default function WortschatzSeite({ onZurueck }: Props) {
         <FilterChip aktiv={gruppeId === 'alle'} onClick={() => setGruppeId('alle')}>
           Alle
         </FilterChip>
-        {vokabular.map((g) => (
+        {dimension.gruppen.map((g) => (
           <FilterChip key={g.id} aktiv={gruppeId === g.id} onClick={() => setGruppeId(g.id)}>
             {g.titel}
           </FilterChip>
@@ -80,7 +110,7 @@ export default function WortschatzSeite({ onZurueck }: Props) {
       </div>
 
       <p className="mb-4 text-xs text-ink/50">
-        {q ? `${treffer} Treffer` : `${gesamtzahlVokabeln} Einträge`}
+        {q ? `${treffer} Treffer` : `${gesamtzahlVokabeln} Vokabeln · nach Wortart und nach Thema`}
       </p>
 
       {gruppen.length === 0 && (
@@ -96,17 +126,32 @@ export default function WortschatzSeite({ onZurueck }: Props) {
               <h2 className="font-serif text-xl font-semibold text-ink">{g.titel}</h2>
               <p className="mt-0.5 text-sm text-ink/60">{g.beschreibung}</p>
             </div>
-            <ul className="space-y-2.5">
-              {g.eintraege.map((e, i) => (
-                <li key={i} className="rounded-lg border border-ink/10 bg-white/70 p-3.5 sm:p-4">
-                  <p className="font-serif text-[1.1rem] font-semibold text-bordeaux">{e.wort}</p>
-                  <p className="mt-1 text-[0.95rem] text-ink/85">{e.bedeutung}</p>
-                  <p className="mt-1.5 border-l-2 border-ink/15 pl-3 font-serif text-[1rem] italic text-ink/75">
-                    {e.beispiel}
-                  </p>
-                </li>
-              ))}
-            </ul>
+
+            <div className="overflow-x-auto rounded-lg border border-ink/10 bg-white/70">
+              <table className="w-full border-collapse text-left text-[0.95rem]">
+                <thead>
+                  <tr className="border-b border-ink/10 text-[0.7rem] uppercase tracking-wide text-ink/50">
+                    <th className="px-3 py-2 font-semibold sm:px-4">Deutsch</th>
+                    <th className="px-3 py-2 font-semibold sm:px-4">English</th>
+                    <th className="hidden px-3 py-2 font-semibold sm:table-cell sm:px-4">Beispiel</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {g.eintraege.map((e, i) => (
+                    <tr
+                      key={i}
+                      className="border-b border-ink/5 align-top last:border-0 hover:bg-bordeaux-tint/25"
+                    >
+                      <td className="px-3 py-2.5 font-medium text-bordeaux sm:px-4">{e.de}</td>
+                      <td className="px-3 py-2.5 text-ink/80 sm:px-4">{e.en}</td>
+                      <td className="hidden px-3 py-2.5 font-serif italic text-ink/65 sm:table-cell sm:px-4">
+                        {e.beispiel}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </section>
         ))}
       </div>

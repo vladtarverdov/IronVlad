@@ -67,9 +67,11 @@ läuft sie vollständig **ohne WLAN/Internet**.
 2. **Themenseite:** Tabs „Regeln / Beispiele / Anwendung / Übungen“. Jeder Regelblock enthält
    zusätzlich eine Erklärung **„In einfachen Worten“** in einfacher Alltagssprache (grün
    hervorgehoben) — die fachliche Erklärung bleibt daneben erhalten.
-3. **Wortschatz (C1–C2):** eigene Seite mit Verben, Adjektiven, Nomen, Konnektoren, Redemitteln
-   für Meinung/Diskussion/Alltag und Redewendungen. Nach Gruppen filterbar und durchsuchbar.
-   Inhalte liegen in [`src/vokabular.ts`](src/vokabular.ts).
+3. **Wortschatz (C1–C2):** eigene Seite mit **Deutsch–English-Tabellen** (jede Vokabel mit
+   englischer Übersetzung und Beispielsatz). Zwei Ordnungen per Umschalter: **nach Wortart**
+   (Verben, Nomen, Adjektive, Konnektoren, Redewendungen) und **nach Thema** (Meinung äußern,
+   Diskussion, Alltag, Beruf, Small Talk, Konflikte) — je ~10 Einträge pro Gruppe. Nach Gruppen
+   filterbar und durchsuchbar. Inhalte liegen in [`src/vokabular.ts`](src/vokabular.ts).
 4. **Übungen:** Antwort in das Textfeld schreiben → „Lösung prüfen“ blendet die Musterlösung ein →
    Selbstbewertung per Buttons **Richtig / Teilweise / Falsch** (fließt in den Punktestand:
    richtig = 1, teilweise = 0,5, falsch = 0). Es gibt **kein** erzwungenes Auto-Grading, da Deutsch
