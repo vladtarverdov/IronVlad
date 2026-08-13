@@ -102,6 +102,12 @@ export default function Themenseite({ thema, modulTitel, progress, onZurueck }: 
               <div key={i} className="rounded-lg border border-ink/10 bg-white/70 p-4 sm:p-5">
                 <h3 className="font-serif text-lg font-semibold text-ink">{r.titel}</h3>
                 <p className="prose-de mt-1.5 text-ink/85">{r.erklaerung}</p>
+                <div className="mt-3 rounded-md border-l-2 border-emerald-600/50 bg-emerald-50/60 px-3 py-2">
+                  <p className="text-[0.7rem] font-semibold uppercase tracking-wide text-emerald-800">
+                    In einfachen Worten
+                  </p>
+                  <p className="prose-de mt-0.5 text-ink/85">{r.einfach}</p>
+                </div>
                 <p className="mt-3 rounded-md bg-ink/[0.04] px-3 py-2 font-serif text-[1.02rem] italic text-ink/90">
                   {r.beispiel}
                 </p>

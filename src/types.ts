@@ -11,6 +11,8 @@ export type UebungsTyp =
 export interface Regelblock {
   titel: string
   erklaerung: string
+  /** Plain-language-Erklärung in einfacher Alltagssprache („In einfachen Worten“). */
+  einfach: string
   beispiel: string
 }
 
@@ -42,4 +44,22 @@ export interface Modul {
   titel: string
   untertitel: string
   themen: Thema[]
+}
+
+// --- Wortschatz für das Sprechen auf C1–C2-Niveau ---------------------------
+
+export interface VokabelEintrag {
+  /** Das Wort, die Wendung oder das Redemittel. */
+  wort: string
+  /** Bedeutung / Verwendung in einfacher Sprache. */
+  bedeutung: string
+  /** Ein idiomatischer Beispielsatz. */
+  beispiel: string
+}
+
+export interface VokabelGruppe {
+  id: string
+  titel: string
+  beschreibung: string
+  eintraege: VokabelEintrag[]
 }

@@ -5,9 +5,10 @@ import Fortschrittsbalken from '../components/Fortschrittsbalken'
 interface Props {
   progress: ProgressApi
   onOeffne: (themaId: string) => void
+  onWortschatz: () => void
 }
 
-export default function Startseite({ progress, onOeffne }: Props) {
+export default function Startseite({ progress, onOeffne, onWortschatz }: Props) {
   const g = progress.gesamt
 
   return (
@@ -51,6 +52,32 @@ export default function Startseite({ progress, onOeffne }: Props) {
           )}
         </div>
       </header>
+
+      {/* Zugang zum Wortschatz */}
+      <button
+        type="button"
+        onClick={onWortschatz}
+        className="group mb-10 flex w-full items-center gap-4 rounded-lg border border-bordeaux/25 bg-bordeaux-tint/40 p-4 text-left transition-all hover:-translate-y-0.5 hover:border-bordeaux/50 hover:shadow-md sm:p-5"
+      >
+        <span
+          aria-hidden
+          className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-bordeaux font-serif text-lg font-semibold text-white"
+        >
+          W
+        </span>
+        <span className="flex-1">
+          <span className="block font-serif text-lg font-semibold text-ink group-hover:text-bordeaux">
+            Wortschatz zum Sprechen (C1–C2)
+          </span>
+          <span className="mt-0.5 block text-sm text-ink/65">
+            Verben, Adjektive, Nomen, Konnektoren, Redemittel und Redewendungen — vom
+            Alltagsgespräch bis zur Diskussion.
+          </span>
+        </span>
+        <span aria-hidden className="text-bordeaux/70 group-hover:translate-x-0.5">
+          →
+        </span>
+      </button>
 
       <div className="space-y-10">
         {module.map((m) => (

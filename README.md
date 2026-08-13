@@ -63,13 +63,18 @@ läuft sie vollständig **ohne WLAN/Internet**.
 ## Bedienung
 
 1. **Startseite:** Themen nach Modulen als Kacheln, jeweils mit Fortschrittsanzeige; oben der
-   Gesamtfortschritt.
-2. **Themenseite:** Tabs „Regeln / Beispiele / Anwendung / Übungen“.
-3. **Übungen:** Antwort in das Textfeld schreiben → „Lösung prüfen“ blendet die Musterlösung ein →
+   Gesamtfortschritt und ein Zugang zum **Wortschatz**.
+2. **Themenseite:** Tabs „Regeln / Beispiele / Anwendung / Übungen“. Jeder Regelblock enthält
+   zusätzlich eine Erklärung **„In einfachen Worten“** in einfacher Alltagssprache (grün
+   hervorgehoben) — die fachliche Erklärung bleibt daneben erhalten.
+3. **Wortschatz (C1–C2):** eigene Seite mit Verben, Adjektiven, Nomen, Konnektoren, Redemitteln
+   für Meinung/Diskussion/Alltag und Redewendungen. Nach Gruppen filterbar und durchsuchbar.
+   Inhalte liegen in [`src/vokabular.ts`](src/vokabular.ts).
+4. **Übungen:** Antwort in das Textfeld schreiben → „Lösung prüfen“ blendet die Musterlösung ein →
    Selbstbewertung per Buttons **Richtig / Teilweise / Falsch** (fließt in den Punktestand:
    richtig = 1, teilweise = 0,5, falsch = 0). Es gibt **kein** erzwungenes Auto-Grading, da Deutsch
    Varianten erlaubt; die Musterlösung ist ein Maßstab, keine einzige Wahrheit.
-4. Ein dauerhafter Hinweis-Banner „**Beim Sprechen achten auf:**“ erinnert an drei Fallstricke.
+5. Ein dauerhafter Hinweis-Banner „**Beim Sprechen achten auf:**“ erinnert an drei Fallstricke.
 
 ## Inhalte erweitern
 

@@ -20,36 +20,48 @@ const modulA: Modul = {
           titel: 'Vorgangspassiv (werden-Passiv)',
           erklaerung:
             'Das Vorgangspassiv rückt den Vorgang selbst in den Vordergrund und lässt den Handelnden (Agens) weg oder verschiebt ihn in eine „von“-/„durch“-Angabe. Gebildet mit „werden“ + Partizip II.',
+          einfach:
+            'Kurz gesagt: Du sagst, dass etwas gemacht wird, ohne zu verraten, wer es macht. Aus „Jemand prüft den Antrag“ wird „Der Antrag wird geprüft“.',
           beispiel: 'Der Antrag wird (vom Ausschuss) geprüft.',
         },
         {
           titel: 'Zustandspassiv (sein-Passiv)',
           erklaerung:
             'Das Zustandspassiv beschreibt das Ergebnis eines Vorgangs, nicht den Vorgang selbst. Gebildet mit „sein“ + Partizip II. Es beantwortet die Frage nach dem erreichten Zustand.',
+          einfach:
+            'Hier zählt nicht das Machen, sondern das fertige Ergebnis. „Der Antrag ist geprüft“ heißt: Die Prüfung ist schon erledigt.',
           beispiel: 'Der Antrag ist geprüft. (Ergebnis liegt vor — nicht: er wird gerade geprüft.)',
         },
         {
           titel: 'Passiv mit Modalverb',
           erklaerung:
             'Modalverben verbinden sich mit dem Passiv über den Infinitiv „werden“: Modalverb + Partizip II + „werden“. So lassen sich Notwendigkeit, Möglichkeit oder Erlaubnis passivisch ausdrücken.',
+          einfach:
+            'Du kombinierst „können/müssen“ mit dem Passiv – hänge einfach „werden“ ans Ende: „Die Frist kann verlängert werden.“',
           beispiel: 'Die Frist kann verlängert werden. / Der Fehler musste behoben werden.',
         },
         {
           titel: 'Passiversatz „sein + zu + Infinitiv“',
           erklaerung:
             'Diese Konstruktion drückt (je nach Kontext) Notwendigkeit oder Möglichkeit aus und entspricht einem Passiv mit „müssen“ bzw. „können“. Sie wirkt geschrieben präzise, klingt gesprochen aber steif.',
+          einfach:
+            'Eine schriftliche, etwas steife Art, „muss/kann gemacht werden“ zu sagen: „Die Unterlagen sind einzureichen“ = müssen eingereicht werden. Beim Reden klingt das sehr förmlich.',
           beispiel: 'Die Unterlagen sind bis Freitag einzureichen. (= müssen eingereicht werden)',
         },
         {
           titel: 'Passiversatz „sich lassen“ und „-bar“',
           erklaerung:
             '„sich lassen + Infinitiv“ ersetzt ein Passiv mit „können“ und klingt idiomatisch, auch gesprochen. Adjektive auf „-bar“ komprimieren dieselbe Bedeutung in ein Wort.',
+          einfach:
+            'Willst du „kann gemacht werden“ locker sagen, nimm „sich lassen“: „Das lässt sich lösen.“ Oder ein Wort auf „-bar“: „lösbar“. Klingt natürlich, auch im Gespräch.',
           beispiel: 'Das Problem lässt sich lösen. = Das Problem ist lösbar. = … kann gelöst werden.',
         },
         {
           titel: 'Weitere Ersatzformen: „man“ und Reflexiv',
           erklaerung:
             'Ein aktives „man“ vermeidet das Passiv ganz und wirkt gesprochen natürlicher. Manche Vorgänge lassen sich reflexiv fassen und wirken dadurch subjektlos-elegant.',
+          einfach:
+            'Am einfachsten umgehst du das Passiv mit „man“: „Man klärt das kurz.“ Manchmal passt auch ein Selbst-Verb: „Die Tür öffnet sich.“',
           beispiel: 'Man klärt das kurz. (statt: Das wird kurz geklärt.) / Die Tür öffnet sich automatisch.',
         },
       ],
@@ -94,30 +106,40 @@ const modulA: Modul = {
           titel: 'Subjunktoren (Nebensatz, Verb am Ende)',
           erklaerung:
             'Subjunktionen leiten einen Nebensatz ein und schicken das finite Verb ans Satzende. Wichtige C1-Vertreter: „indem“ (Mittel/Art), „zumal“ (verstärkender Grund), „sodass“ (Folge), „obgleich/wenngleich“ (Einräumung).',
+          einfach:
+            'Kleine Wörter, die einen Nebensatz einleiten und das Verb ganz nach hinten schicken. „indem“ = wie/womit, „zumal“ = weil ja außerdem. Beispiel: „…, indem er ruhig blieb.“',
           beispiel: 'Er überzeugte, indem er ruhig blieb, zumal die Gegenseite die Nerven verlor.',
         },
         {
           titel: 'Konjunktionaladverbien (Position 1, Inversion)',
           erklaerung:
             'Adverbien wie „dennoch“, „gleichwohl“, „folglich“, „mithin“, „hingegen“ stehen im Hauptsatz und lösen bei Position 1 die Inversion aus: Verb an Position 2, Subjekt danach.',
+          einfach:
+            'Wörter wie „dennoch, folglich, deshalb“. Merke: Stehen sie am Satzanfang, kommt sofort das Verb – „Deshalb gehen wir“, nicht „Deshalb wir gehen“.',
           beispiel: 'Die Lage war ernst; dennoch bewahrte sie die Ruhe.',
         },
         {
           titel: '„wobei“ — Kommentierung und Einschränkung',
           erklaerung:
             '„wobei“ hängt eine begleitende Bemerkung oder eine leichte Einschränkung an, ohne das Gesagte zu widerrufen. Sehr wirksam, um einen Gedanken elegant weiterzudrehen. Verb am Ende.',
+          einfach:
+            '„wobei“ hängt eine kleine Nebenbemerkung an, ohne das Gesagte zurückzunehmen: „Der Plan ist gut, wobei die Kosten noch offen sind.“ Praktisch, um höflich einzuschränken.',
           beispiel: 'Der Plan ist gut, wobei die Finanzierung noch offen ist.',
         },
         {
           titel: 'Zweigliedrige Konnektoren',
           erklaerung:
             'Paarige Konnektoren strukturieren Argumente sichtbar: „zwar …, aber …“, „einerseits …, andererseits …“, „sowohl … als auch“, „weder … noch“, „je …, desto …“.',
+          einfach:
+            'Wortpaare, die deinen Satz ordnen: „zwar … aber“, „einerseits … andererseits“, „je … desto“. Sie machen dein Argument übersichtlich.',
           beispiel: 'Je genauer man plant, desto weniger Überraschungen erlebt man.',
         },
         {
           titel: 'Konzessive Verstärkung: „so … auch“',
           erklaerung:
             'Die Konstruktion „so + Adjektiv + auch“ leitet eine nachdrückliche Einräumung ein — literarisch und rhetorisch stark.',
+          einfach:
+            'Eine betonte Art, etwas einzuräumen: „So gut die Idee auch ist, sie ist zu teuer.“ Heißt: Ja, gut – trotzdem nein.',
           beispiel: 'So überzeugend das Argument auch klingt, es hält der Prüfung nicht stand.',
         },
       ],
@@ -161,30 +183,40 @@ const modulA: Modul = {
           titel: 'Gegenwart: würde-Form vs. Originalform',
           erklaerung:
             'Der Konjunktiv II der Gegenwart wird meist mit „würde + Infinitiv“ gebildet. Bei häufigen Verben (sein, haben, Modalverben, kommen, gehen, wissen) ist die Originalform vorzuziehen: wäre, hätte, könnte, käme, wüsste.',
+          einfach:
+            'Für „was wäre, wenn …“ und für höfliche Sätze. Meist „würde + Verb“: „Ich würde kommen.“ Bei ein paar Verben klingt die Kurzform besser: wäre, hätte, könnte, käme, wüsste.',
           beispiel: 'Ich würde gern kommen. — Aber: Ich wäre froh, wenn du dabei wärst.',
         },
         {
           titel: 'Vergangenheit: hätte/wäre + Partizip II',
           erklaerung:
             'Für die irreale Vergangenheit gibt es nur eine Form: „hätte“ oder „wäre“ + Partizip II. Sie drückt aus, dass etwas anders hätte laufen können, es aber nicht tat.',
+          einfach:
+            'Für „das hätte anders sein können“ gibt es nur eine Form: „hätte“ oder „wäre“ + Partizip. „Hätte ich das gewusst, wäre ich früher gefahren.“',
           beispiel: 'Wenn ich das gewusst hätte, wäre ich früher gefahren.',
         },
         {
           titel: 'Irreale Bedingungssätze',
           erklaerung:
             'Im irrealen Konditional steht in beiden Teilen der Konjunktiv II. Das „wenn“ kann entfallen — dann rückt das Verb an die Spitze (Konditional-Inversion).',
+          einfach:
+            'Erfundene Wenn-Sätze: beide Teile im Konjunktiv II. Du kannst das „wenn“ weglassen und mit dem Verb starten: „Hätte ich Zeit, käme ich.“',
           beispiel: 'Hätte ich mehr Zeit, (dann) läse ich mehr. (= Wenn ich mehr Zeit hätte …)',
         },
         {
           titel: 'Höflichkeit und Abschwächung',
           erklaerung:
             'Der Konjunktiv II macht Bitten, Ratschläge und Aussagen höflich-vorsichtig. „Könnten Sie …?“, „Ich würde meinen …“, „Es wäre schön, wenn …“ nehmen jede Schroffheit heraus.',
+          einfach:
+            'Der Konjunktiv II macht alles höflicher und weicher: „Könnten Sie …?“ statt „Können Sie …?“, „Es wäre schön, wenn …“. Ideal für Bitten.',
           beispiel: 'Dürfte ich Sie kurz stören? Ich hätte da eine Frage.',
         },
         {
           titel: 'Irreale Vergleiche und Wünsche',
           erklaerung:
             'Nach „als ob“ / „als“ steht der Konjunktiv II für einen irrealen Vergleich. „wenn … doch nur“ bzw. Verb-Erst-Stellung mit „doch“/„nur“ bildet den irrealen Wunsch.',
+          einfach:
+            'Nach „als ob“ tust du so, als ob etwas wäre: „Er tut, als ob er alles wüsste.“ Und für Wünsche: „Wäre er doch hier!“',
           beispiel: 'Er tat, als ob er alles wüsste. — Wäre er doch nur pünktlicher!',
         },
       ],
@@ -228,30 +260,40 @@ const modulA: Modul = {
           titel: 'Bildung des Konjunktiv I',
           erklaerung:
             'Der Konjunktiv I bildet sich aus dem Verbstamm des Infinitivs + Endungen (-e, -est, -e, -en, -et, -en). Kennform ist die 3. Person Singular auf „-e“: er habe, er gehe, er komme, sie sei.',
+          einfach:
+            'Der Konjunktiv I zeigt: Ich gebe nur wieder, was jemand gesagt hat, ich behaupte es nicht selbst. Merkform ist die er/sie-Form auf „-e“: er habe, er komme, sie sei.',
           beispiel: 'Sie sagt, er habe keine Zeit und komme später.',
         },
         {
           titel: 'Ausweichen auf Konjunktiv II',
           erklaerung:
             'Wo der Konjunktiv I nicht vom Indikativ zu unterscheiden ist (v. a. im Plural: „sie haben“ = Indikativ = Konj. I), weicht man auf den Konjunktiv II aus, um die Distanz sichtbar zu halten.',
+          einfach:
+            'Sieht der Konjunktiv I genauso aus wie die normale Form (oft im Plural: „sie haben“), nimmst du stattdessen den Konjunktiv II („sie hätten“), damit man das Zitat erkennt.',
           beispiel: 'Sie sagen, sie hätten keine Zeit. (nicht: „sie haben“ — das wäre nicht als Zitat erkennbar)',
         },
         {
           titel: '„sein“ als Sonderfall',
           erklaerung:
             'Das Verb „sein“ hat im Konjunktiv I durchgehend klare, eigene Formen: ich sei, du sei(e)st, er sei, wir seien, ihr seiet, sie seien — deshalb hier fast immer Konjunktiv I.',
+          einfach:
+            '„sein“ ist im Konjunktiv I schön eindeutig: sei, seien. Deshalb kannst du es fast immer benutzen: „Er sagt, er sei krank.“',
           beispiel: 'Er behauptet, er sei unschuldig und die Vorwürfe seien haltlos.',
         },
         {
           titel: 'Zeitverschiebung in der indirekten Rede',
           erklaerung:
             'Die indirekte Rede kennt drei Zeitstufen: Gegenwart → Konj. I Präsens (habe/sei); Vergangenheit (alle drei) → Konj. I Perfekt (habe/sei + Partizip II); Zukunft → Konj. I mit „werde“.',
+          einfach:
+            'Was in der Vergangenheit war, wird beim Wiedergeben immer zu „habe/sei + Partizip“ – egal, wie das Original klang. „Ich kam zu spät“ → „Er sagte, er sei zu spät gekommen.“',
           beispiel: '„Ich kam zu spät.“ → Er sagte, er sei zu spät gekommen.',
         },
         {
           titel: 'Anpassung von Pronomen, Ort und Zeit',
           erklaerung:
             'Beim Umwandeln in indirekte Rede verschieben sich Pronomen (ich→er/sie), Orts- und Zeitangaben (hier→dort, heute→an jenem Tag) und Fragen werden zu „ob“- bzw. W-Wort-Nebensätzen.',
+          einfach:
+            'Beim Wiedergeben musst du mitdenken: „ich“ wird „er/sie“, „heute“ wird „an dem Tag“, „hier“ wird „dort“. Fragen bekommen „ob“ oder ein W-Wort.',
           beispiel: '„Kommst du morgen?“ → Sie fragte, ob er am nächsten Tag komme.',
         },
       ],
@@ -295,24 +337,32 @@ const modulA: Modul = {
           titel: 'Objektiv vs. subjektiv',
           erklaerung:
             'Objektiv beschreiben Modalverben reale Umstände (Fähigkeit, Erlaubnis, Zwang). Subjektiv drücken sie den Grad der Sprechergewissheit über einen Sachverhalt aus. Die Form ist gleich, die Bedeutung ergibt sich aus dem Kontext.',
+          einfach:
+            'Modalverben haben zwei Jobs. Normal: „Er kann schwimmen“ (Fähigkeit). Oder als Vermutung: „Er kann schon zu Hause sein“ (vielleicht ist er es). Der Zusammenhang zeigt, was gemeint ist.',
           beispiel: 'objektiv: Er kann schwimmen. — subjektiv: Er kann jetzt zu Hause sein. (Vermutung)',
         },
         {
           titel: 'Gewissheitsskala',
           erklaerung:
             '„müssen“ = starke, logisch zwingende Vermutung; „dürfte“ = begründete Annahme; „können/mag“ = Möglichkeit; „kann nicht“ = ausgeschlossen. So staffeln Sie Ihre Sicherheit fein.',
+          einfach:
+            'So sicher bist du dir: „muss“ = fast sicher, „dürfte“ = wahrscheinlich, „kann/mag“ = möglich, „kann nicht“ = ausgeschlossen. „Sie muss krank sein“ heißt: Ich bin mir fast sicher.',
           beispiel: 'Sie muss krank sein (fast sicher). Sie dürfte krank sein (wahrscheinlich). Sie mag krank sein (möglich).',
         },
         {
           titel: '„sollen“ — Wiedergabe fremder Behauptung',
           erklaerung:
             'Subjektives „sollen“ gibt eine unbestätigte fremde Aussage wieder („man sagt, dass …“) — der Sprecher distanziert sich. „wollen“ hingegen gibt eine (bezweifelte) Selbstbehauptung des Subjekts wieder.',
+          einfach:
+            '„sollen“ = andere sagen das, ich weiß es nicht sicher: „Er soll reich sein.“ „wollen“ = er selbst behauptet es, ich zweifle: „Er will nichts gewusst haben.“',
           beispiel: 'Er soll sehr reich sein. (so heißt es) — Er will alles gesehen haben. (er behauptet es)',
         },
         {
           titel: 'Vergangenheit: Modalverb + Infinitiv Perfekt',
           erklaerung:
             'Die subjektive Vermutung über Vergangenes bildet sich mit „Modalverb + Partizip II + haben/sein“. Die Sprechereinschätzung bleibt im Präsens, der Inhalt liegt in der Vergangenheit.',
+          einfach:
+            'Vermutung über etwas Vergangenes: Modalverb + Partizip + „haben/sein“. „Sie muss den Zug verpasst haben.“',
           beispiel: 'Sie muss den Zug verpasst haben. Er dürfte schon gegangen sein.',
         },
       ],
@@ -356,30 +406,40 @@ const modulA: Modul = {
           titel: 'Kasus im Relativsatz',
           erklaerung:
             'Das Relativpronomen richtet sich im Genus/Numerus nach dem Bezugswort, im Kasus aber nach seiner Funktion IM Relativsatz. Das ist der Kern jeder Fehlerquelle.',
+          einfach:
+            'Das kleine Wort (der/dem/den …) richtet sich danach, welche Rolle es im Nebensatz spielt – nicht nach dem Hauptsatz. „Der Mann, dem ich helfe“ (helfen + dem).',
           beispiel: 'Der Mann, dem ich vertraue, … (Dativ, weil „vertrauen“ den Dativ regiert).',
         },
         {
           titel: 'Genitiv-Relativpronomen (dessen/deren)',
           erklaerung:
             '„dessen“ (mask./neutr. Sg.) und „deren“ (fem. Sg. + Plural) drücken ein Besitz-/Zugehörigkeitsverhältnis aus. Das folgende Nomen steht ohne Artikel direkt dahinter.',
+          einfach:
+            'Für Besitz im Relativsatz: „dessen“ (männlich/sächlich) und „deren“ (weiblich/Mehrzahl). „Die Autorin, deren Buch gewann“ = ihr Buch gewann.',
           beispiel: 'Die Autorin, deren Roman preisgekrönt wurde, liest heute Abend.',
         },
         {
           titel: 'Präposition + Relativpronomen',
           erklaerung:
             'Verlangt das Verb im Relativsatz eine Präposition, steht diese vor dem Relativpronomen. Bei Sachen ist auch „wo(r)+Präposition“ möglich, wirkt aber weniger präzise.',
+          einfach:
+            'Braucht das Verb eine Präposition, stellst du sie vor das Relativwort: „das Thema, über das wir sprachen“ (sprechen über).',
           beispiel: 'Das Thema, über das wir sprachen, … / Der Grund, aus dem er ging, …',
         },
         {
           titel: 'Relativadverb „wo“ und „was“',
           erklaerung:
             'Bei Orts- und Zeitangaben nutzt man „wo“; nach „das“, „alles“, „nichts“, „etwas“, „vieles“ sowie nach ganzen Sätzen steht „was“.',
+          einfach:
+            'Bei Orten und Zeiten passt „wo“: „die Stadt, wo ich wohne.“ Nach „alles, etwas, nichts“ oder einem ganzen Satz nimmst du „was“: „alles, was glänzt.“',
           beispiel: 'die Stadt, wo ich aufwuchs … / Er schwieg, was mich beunruhigte.',
         },
         {
           titel: 'Weiterführender Relativsatz',
           erklaerung:
             'Ein weiterführender Relativsatz (oft mit „was“) kommentiert den gesamten vorangehenden Hauptsatz und ersetzt einen Anschluss mit „und das“. Er wirkt eleganter als zwei Hauptsätze.',
+          einfach:
+            'Mit „was“ hängst du einen Kommentar an den ganzen Satz an, statt „und das“: „Er kam pünktlich, was mich freute.“',
           beispiel: 'Er sagte pünktlich zu, was ich sehr zu schätzen wusste.',
         },
       ],
@@ -423,24 +483,32 @@ const modulA: Modul = {
           titel: 'Verbal- vs. Nominalstil',
           erklaerung:
             'Der Nominalstil packt Handlungen in Substantive und verdichtet Information. Er wirkt sachlich und kompakt, kann aber schwerfällig werden. Der Verbalstil ist lebendiger und leichter verständlich.',
+          einfach:
+            'Dasselbe kannst du mit Verben (lebendig) oder mit Hauptwörtern (kompakt, aber trocken) sagen: „Weil die Preise stiegen …“ vs. „Wegen des Preisanstiegs …“. Beim Reden lieber Verben.',
           beispiel: 'verbal: Weil die Preise stiegen, sank die Nachfrage. → nominal: Wegen des Preisanstiegs sank die Nachfrage.',
         },
         {
           titel: 'Umwandlung Nebensatz → Nominalphrase',
           erklaerung:
             'Kausale, temporale, konditionale und konzessive Nebensätze lassen sich in Präpositionalphrasen mit Nominalisierung umformen: weil→wegen/aufgrund, wenn→bei/im Falle, nachdem→nach, obwohl→trotz.',
+          einfach:
+            'Du kannst Nebensätze in kurze Wendungen packen: weil→wegen, wenn→bei, nachdem→nach, obwohl→trotz. „Nach dem Essen“ statt „Nachdem wir gegessen hatten“.',
           beispiel: 'Nach Abschluss der Prüfung … (statt: Nachdem die Prüfung abgeschlossen war …)',
         },
         {
           titel: 'Bildung von Verbalsubstantiven',
           erklaerung:
             'Substantivierte Infinitive (das Lesen), Ableitungen auf „-ung“ (die Prüfung), „-tion“ (die Reduktion) oder Nullableitungen (der Beginn) bilden das Rückgrat des Nominalstils.',
+          einfach:
+            'Aus Verben werden Hauptwörter: „lesen“ → „das Lesen“, „prüfen“ → „die Prüfung“. Damit baust du den kompakten Stil.',
           beispiel: 'die Durchführung, das Erreichen, der Verzicht, die Bewertung',
         },
         {
           titel: 'Genitivketten und ihre Grenzen',
           erklaerung:
             'Nominalisierungen ziehen Genitivattribute an. Zwei bis drei Glieder sind elegant; längere Ketten werden unlesbar. Dann besser wieder verbalisieren oder mit „von“ auflockern.',
+          einfach:
+            'Zu viele „des …, des …, des …“ hintereinander machen den Satz unlesbar. Zwei sind okay, danach lieber wieder ein Verb benutzen.',
           beispiel: 'lesbar: die Bewertung des Antrags — überladen: die Bewertung der Durchführung der Prüfung des Antrags',
         },
       ],
@@ -492,30 +560,40 @@ const modulB: Modul = {
           titel: 'Partizip I als Attribut (Aktiv, gleichzeitig)',
           erklaerung:
             'Das Partizip I (Infinitiv + „-d“) beschreibt einen laufenden, aktiven Vorgang, gleichzeitig zum Hauptgeschehen. Es wird wie ein Adjektiv dekliniert und steht vor dem Nomen.',
+          einfach:
+            'Aus „das Kind, das lacht“ machst du kurz „das lachende Kind“. Das Verb wird zum Beschreibungswort vor dem Nomen – für etwas, das gerade passiert.',
           beispiel: 'das lachende Kind = das Kind, das lacht',
         },
         {
           titel: 'Partizip II als Attribut (Passiv/abgeschlossen)',
           erklaerung:
             'Das Partizip II drückt bei transitiven Verben ein Passiv aus (das Ergebnis), bei intransitiven Perfektverben einen abgeschlossenen Vorgang. Ebenfalls dekliniert.',
+          einfach:
+            'Genauso, aber für etwas Fertiges: „der Wagen, der repariert wurde“ → „der reparierte Wagen“.',
           beispiel: 'der reparierte Wagen = der Wagen, der repariert wurde',
         },
         {
           titel: 'Erweitertes Partizipialattribut',
           erklaerung:
             'Zwischen Artikel und Partizip lässt sich ein ganzer Bündel von Angaben schieben. Diese „eingeschobene Klammer“ komprimiert einen Relativsatz vollständig — sehr dicht, typisch schriftsprachlich.',
+          einfach:
+            'Du kannst viele Wörter zwischen „der“ und das Beschreibungswort schieben: „die vom Ausschuss beschlossene Reform“. Sehr dicht – eher zum Lesen als zum Reden.',
           beispiel: 'die vom Ausschuss nach langer Debatte beschlossene Reform',
         },
         {
           titel: 'Gerundivum: „zu“ + Partizip I',
           erklaerung:
             'Das attributive „zu“ + Partizip I drückt eine passivische Notwendigkeit oder Möglichkeit aus (entspricht „sein + zu“). Sehr kompakt und formell.',
+          einfach:
+            '„zu“ + …-d bedeutet „was gemacht werden muss/kann“: „die zu lösende Aufgabe“ = die Aufgabe, die man lösen muss.',
           beispiel: 'die zu lösende Aufgabe = die Aufgabe, die gelöst werden muss',
         },
         {
           titel: 'Auflösen in Relativsätze',
           erklaerung:
             'Erweiterte Partizipialattribute können den Lesefluss bremsen. Für gesprochenes Deutsch und für Verständlichkeit löst man sie in Relativsätze auf — die Bedeutung bleibt, die Struktur wird klarer.',
+          einfach:
+            'Diese langen Wortpakete kannst du wieder auseinandernehmen. Beim Sprechen klingt „die Reform, die beschlossen wurde“ natürlicher als ein langes „die … beschlossene Reform“.',
           beispiel: 'die Reform, die der Ausschuss nach langer Debatte beschloss (aufgelöst)',
         },
       ],
@@ -559,24 +637,32 @@ const modulB: Modul = {
           titel: 'Was ist ein Funktionsverbgefüge?',
           erklaerung:
             'Ein Funktionsverbgefüge (FVG) besteht aus einem bedeutungsarmen „Funktionsverb“ (stellen, bringen, kommen, treffen, nehmen …) und einem Substantiv, das die eigentliche Bedeutung trägt. Zusammen ersetzen sie ein Vollverb.',
+          einfach:
+            'Manche Ausdrücke bestehen aus einem schwachen Verb + Hauptwort und meinen zusammen ein einziges Verb: „eine Entscheidung treffen“ = entscheiden. Klingt formeller.',
           beispiel: 'eine Entscheidung treffen = entscheiden; in Frage stellen = bezweifeln',
         },
         {
           titel: 'Aktiv vs. passiv-orientierte FVG',
           erklaerung:
             'Manche FVG betonen die Handlung/den Beginn („in Gang setzen“, „zur Sprache bringen“), andere den Zustand/das Ergebnis („in Frage stehen“, „zur Debatte stehen“). Die Wahl steuert die Perspektive fein.',
+          einfach:
+            'Manche zeigen den Start („in Gang setzen“ = anschieben), andere den Zustand („zur Debatte stehen“ = wird gerade besprochen). Du wählst je nachdem, was du betonen willst.',
           beispiel: 'etwas in Bewegung setzen (Handlung) — in Bewegung sein (Zustand)',
         },
         {
           titel: 'Feste Präpositionen',
           erklaerung:
             'Viele FVG haben eine feste Präposition, deren Kasus man mitlernen muss: „in Betracht ziehen“ (Akk.), „zur Verfügung stehen“ (Dat.), „unter Beweis stellen“. Diese Fügungen sind unveränderlich.',
+          einfach:
+            'Diese Ausdrücke haben eine feste Präposition, die man mitlernen muss: „in Betracht ziehen“, „zur Verfügung stehen“. Die Wörter sind nicht frei austauschbar.',
           beispiel: 'etwas in Betracht ziehen, jemandem zur Verfügung stehen, Kritik üben an (+ Dat.)',
         },
         {
           titel: 'Stilwirkung und Nominalstil',
           erklaerung:
             'FVG heben das Register: Sie klingen formell, präzise und leicht distanziert — ideal für Verträge, Berichte, offizielle Reden. Übertrieben eingesetzt wirken sie aufgebläht und bürokratisch.',
+          einfach:
+            'Sie klingen offiziell und seriös – gut für E-Mails und Reden, unpassend für lockere Gespräche. „in Erwägung ziehen“ ist die schicke Version von „überlegen“.',
           beispiel: 'in Erwägung ziehen (formell) vs. überlegen (neutral)',
         },
       ],
@@ -620,24 +706,32 @@ const modulB: Modul = {
           titel: 'Funktion der Modalpartikeln',
           erklaerung:
             'Modalpartikeln („Abtönungspartikeln“) tragen keine wörtliche Bedeutung, sondern signalisieren die Haltung des Sprechers und den Bezug zum Gesprächspartner. Sie sind unbetont, unflektierbar und stehen im Mittelfeld.',
+          einfach:
+            'Kleine Wörtchen wie „doch, ja, mal, halt“, die nichts Konkretes bedeuten, aber deine Stimmung zeigen. „Komm doch mal her“ klingt freundlich, „Komm her“ wie ein Befehl.',
           beispiel: 'Komm doch mal her! (freundlich-auffordernd, nicht wörtlich „doch“ + „mal“)',
         },
         {
           titel: 'doch, ja, eben, halt',
           erklaerung:
             '„doch“ appelliert an gemeinsames Wissen oder mildert eine Aufforderung; „ja“ betont Selbstverständliches oder warnt; „eben/halt“ drücken resignative Unabänderlichkeit aus (halt eher süddeutsch/locker, eben neutraler).',
+          einfach:
+            '„doch“ = das weißt du doch / mach ruhig; „ja“ = ist doch klar; „eben/halt“ = kann man nichts machen. „Dann warten wir eben.“',
           beispiel: 'Das ist ja klar. — Sei doch nicht so streng. — Dann müssen wir eben warten.',
         },
         {
           titel: 'mal, denn, wohl, schon',
           erklaerung:
             '„mal“ macht Aufforderungen beiläufig-freundlich; „denn“ nimmt Fragen die Schärfe; „wohl“ drückt Vermutung aus; „schon“ beschwichtigt oder räumt ein.',
+          einfach:
+            '„mal“ = kurz/locker („guck mal“), „denn“ = freundlich in Fragen („wie heißt du denn?“), „wohl“ = wahrscheinlich, „schon“ = wird schon klappen.',
           beispiel: 'Wo ist er denn? — Er wird wohl im Stau stehen. — Das wird schon klappen.',
         },
         {
           titel: 'Kombination und Stellung',
           erklaerung:
             'Modalpartikeln lassen sich kombinieren, in fester Reihenfolge (z. B. „ja mal“, „doch mal“, „doch wohl“). Sie stehen typischerweise nach dem finiten Verb und den Pronomen, vor der neuen Information.',
+          einfach:
+            'Diese Wörtchen stehen in der Satzmitte (nach dem Verb), nicht am Anfang: „Ruf ihn doch mal an.“ Man kann sie auch koppeln.',
           beispiel: 'Ruf ihn doch mal an. — Das hast du doch wohl nicht ernst gemeint?',
         },
       ],
@@ -681,24 +775,32 @@ const modulB: Modul = {
           titel: 'Komposition (Zusammensetzung)',
           erklaerung:
             'Das Deutsche bildet neue Wörter durch Aneinanderfügen. Das letzte Glied (Grundwort) bestimmt Wortart, Genus und Grundbedeutung; die davor stehenden Glieder (Bestimmungswörter) präzisieren. Oft steht ein Fugenelement (-s-, -n-, -en-) dazwischen.',
+          einfach:
+            'Deutsch klebt Wörter zusammen. Das letzte Wort bestimmt Artikel und Sinn: „die Haustür“ ist eine Tür (die), kein Haus. Manchmal steckt ein „-s-“ dazwischen (Arbeitszeit).',
           beispiel: 'die Arbeit + s + Zeit = die Arbeitszeit (fem., weil „Zeit“ das Grundwort ist)',
         },
         {
           titel: 'Derivation (Ableitung) mit Suffixen',
           erklaerung:
             'Suffixe verändern die Wortart und die Bedeutung: „-ung“ (Handlung/Ergebnis), „-heit/-keit“ (Eigenschaft), „-bar/-lich/-sam“ (Adjektive), „-ieren“ (Verben). So entstehen aus einem Stamm ganze Wortfamilien.',
+          einfach:
+            'Mit Endungen baust du neue Wörter: „frei“ → „Freiheit“, „lösen“ → „lösbar“. So machst du aus einem Wort eine ganze Familie.',
           beispiel: 'frei → die Freiheit; lösen → lösbar; die Reform → reformieren',
         },
         {
           titel: 'Trennbare vs. untrennbare Präfixe',
           erklaerung:
             'Trennbare Präfixe (an-, auf-, mit-, zu-, ein- …) sind betont und lösen sich ab (er ruft an). Untrennbare (be-, ver-, er-, ent-, zer-, ge-) sind unbetont und bleiben fest; sie bilden das Partizip II ohne „ge-“.',
+          einfach:
+            'Manche Vorsilben lösen sich ab: „anrufen“ → „ich rufe an“. Andere bleiben fest: „verstehen“ → „ich verstehe“. Feste bilden das Partizip ohne „ge-“: „verstanden“, nicht „geverstanden“.',
           beispiel: 'anrufen → er ruft an, hat angerufen — verstehen → er versteht, hat verstanden',
         },
         {
           titel: 'Bedeutungsnuancen der Präfixe',
           erklaerung:
             'Präfixe verschieben die Bedeutung systematisch: „ver-“ oft Fehler/Abschluss (sich verlaufen, verblühen), „zer-“ Zerstörung (zerbrechen), „ent-“ Entfernung/Beginn (entfernen, entflammen), „er-“ Erreichen eines Ziels (erarbeiten).',
+          einfach:
+            'Vorsilben ändern den Sinn: „ver-“ oft schiefgelaufen (sich verlaufen), „zer-“ kaputt (zerbrechen), „ent-“ weg (entfernen). Gleiches Verb, neue Bedeutung.',
           beispiel: 'suchen → versuchen (probieren) / ersuchen (bitten) / durchsuchen (untersuchen)',
         },
       ],
@@ -742,30 +844,40 @@ const modulB: Modul = {
           titel: 'Infinitiv mit „zu“',
           erklaerung:
             'Nach bestimmten Verben (versuchen, beschließen, vergessen, hoffen …), Adjektiven und Substantiven steht eine Infinitivgruppe mit „zu“. Sie hat kein eigenes Subjekt — es ist mit dem des Hauptsatzes identisch.',
+          einfach:
+            'Nach vielen Verben kommt „zu“ + Verb: „Ich versuche zu kommen.“ Das geht nur, wenn es dieselbe Person betrifft wie im Hauptsatz.',
           beispiel: 'Er beschloss, das Angebot anzunehmen. (Subjekt „er“ gilt auch für „annehmen“)',
         },
         {
           titel: 'Verkürzung von „dass“-Sätzen',
           erklaerung:
             'Ein „dass“-Satz mit subjektgleichem Bezug lässt sich in eine Infinitivgruppe verkürzen — schlanker und eleganter. Bei Subjektverschiedenheit ist die Verkürzung nicht möglich; der „dass“-Satz bleibt.',
+          einfach:
+            'Meinen beide Satzteile dieselbe Person, kannst du „dass“ weglassen: „Ich hoffe, dass ich pünktlich bin“ → „Ich hoffe, pünktlich zu sein.“ Kürzer und schöner.',
           beispiel: 'Ich hoffe, dass ich pünktlich bin. → Ich hoffe, pünktlich zu sein.',
         },
         {
           titel: 'Finale und modale Infinitivsätze',
           erklaerung:
             '„um … zu“ drückt Absicht/Ziel aus (statt „damit“ bei Subjektgleichheit), „ohne … zu“ eine fehlende Begleitumstand-Handlung, „anstatt … zu“ eine Alternative, die nicht gewählt wurde.',
+          einfach:
+            '„um … zu“ = wozu/Ziel („um zu bestehen“), „ohne … zu“ = etwas passiert dabei nicht („ohne zu fragen“), „(an)statt … zu“ = statt etwas anderem.',
           beispiel: 'Sie ging, ohne sich zu verabschieden. — Er lernte, um zu bestehen.',
         },
         {
           titel: '„um … zu“ vs. „damit“',
           erklaerung:
             'Bei gleichem Subjekt in Haupt- und Nebensatz nutzt man „um … zu“. Sind die Subjekte verschieden, ist nur „damit“ möglich. Das ist eine harte Regel, die viele verletzen.',
+          einfach:
+            'Gleiche Person → „um … zu“: „Ich lerne, um zu bestehen.“ Verschiedene Personen → „damit“: „Ich erkläre es, damit du es verstehst.“',
           beispiel: 'Ich spare, um zu reisen. (ich/ich) — Ich spare, damit meine Kinder studieren können. (ich/Kinder)',
         },
         {
           titel: 'Stellung von „zu“ bei trennbaren Verben',
           erklaerung:
             'Bei trennbaren Verben rückt „zu“ zwischen Präfix und Stamm und wird zusammengeschrieben: „anzurufen“, „aufzustehen“, „mitzukommen“. Bei untrennbaren steht es davor: „zu verstehen“.',
+          einfach:
+            'Bei Verben wie „anrufen“ rutscht das „zu“ in die Mitte: „anzurufen“. „Vergiss nicht, mich anzurufen.“',
           beispiel: 'Er versprach, mich morgen anzurufen. — Es ist schwer, das zu verstehen.',
         },
       ],
@@ -817,24 +929,32 @@ const modulC: Modul = {
           titel: 'Feste Kasus: Akkusativ- und Dativpräpositionen',
           erklaerung:
             'Manche Präpositionen regieren immer denselben Kasus. Akkusativ: durch, für, gegen, ohne, um, entlang (nachgestellt). Dativ: aus, bei, mit, nach, seit, von, zu, gegenüber. Diese sind auswendig zu lernen.',
+          einfach:
+            'Ein paar Präpositionen haben immer denselben Fall. Merke: „für/ohne/durch/gegen/um“ = Akkusativ, „mit/bei/nach/seit/von/zu/aus“ = Dativ. „für dich“, „mit dir“.',
           beispiel: 'für dich (Akk.) — mit dir (Dat.) — seit einem Jahr (Dat.)',
         },
         {
           titel: 'Wechselpräpositionen (Wo? vs. Wohin?)',
           erklaerung:
             'Neun Präpositionen (an, auf, hinter, in, neben, über, unter, vor, zwischen) regieren Dativ bei Ort/Ruhe (Frage: Wo?) und Akkusativ bei Richtung/Bewegung (Frage: Wohin?).',
+          einfach:
+            'Bei an, auf, in, unter … entscheidet die Frage: Wohin? (Bewegung) → Akkusativ, Wo? (bleibt liegen) → Dativ. „auf den Tisch“ (wohin) vs. „auf dem Tisch“ (wo).',
           beispiel: 'Das Bild hängt an der Wand (Dat., wo?) — Ich hänge das Bild an die Wand (Akk., wohin?).',
         },
         {
           titel: 'Genitivpräpositionen',
           erklaerung:
             'Präpositionen wie wegen, während, trotz, (an)statt, aufgrund, mangels, hinsichtlich, zugunsten regieren den Genitiv und markieren gehobenes Register. Umgangssprachlich wird oft (nicht standardsprachlich) der Dativ verwendet.',
+          einfach:
+            '„wegen, während, trotz, aufgrund“ verlangen den Genitiv und klingen gehoben: „wegen des Staus“. Umgangssprachlich hört man „wegen dem Stau“, schreib aber lieber Genitiv.',
           beispiel: 'während des Vortrags, trotz des Regens, zugunsten der Kläger',
         },
         {
           titel: 'Verschmelzung und feste Wendungen',
           erklaerung:
             'Präposition + Artikel verschmelzen häufig (in dem → im, an dem → am, zu der → zur, bei dem → beim). In festen Wendungen ist die Verschmelzung obligatorisch, bei Betonung des Artikels unterbleibt sie.',
+          einfach:
+            'Präposition + Artikel werden oft ein Wort: in dem→im, an dem→am, zu der→zur. „am Anfang“, „im Grunde“. Nur wenn du den Artikel betonst, bleibt er getrennt.',
           beispiel: 'im Grunde, am Anfang, zur Verfügung — aber: „an dem Tag, als …“ (betont)',
         },
       ],
@@ -878,24 +998,32 @@ const modulC: Modul = {
           titel: 'Feste Präposition und fester Kasus',
           erklaerung:
             'Viele Verben verlangen eine bestimmte Präposition mit festem Kasus, die man als Einheit lernen muss: „warten auf“ (+ Akk.), „teilnehmen an“ (+ Dat.), „sich freuen über/auf“ (+ Akk.). Die Präposition ist hier nicht wörtlich zu deuten.',
+          einfach:
+            'Viele Verben haben eine feste Präposition, die man auswendig lernt: „warten auf“, „teilnehmen an“, „sich freuen über“. Lern das Verb immer gleich mit seiner Präposition.',
           beispiel: 'Ich warte auf den Bus (Akk.). — Sie nimmt an der Sitzung teil (Dat.).',
         },
         {
           titel: 'Bedeutungsunterschiede durch die Präposition',
           erklaerung:
             'Dieselbe Verbwurzel kann je nach Präposition die Bedeutung ändern. Besonders „sich freuen auf“ (Zukünftiges) vs. „sich freuen über“ (Gegenwärtiges/Vergangenes) ist prüfungsrelevant.',
+          einfach:
+            'Die Präposition kann die Bedeutung ändern: „sich freuen auf“ = Vorfreude (kommt noch), „sich freuen über“ = Freude über etwas, das schon da ist.',
           beispiel: 'Ich freue mich auf den Urlaub (kommt noch). — Ich freue mich über das Geschenk (habe ich schon).',
         },
         {
           titel: 'Pronominaladverbien: da(r)- und wo(r)-',
           erklaerung:
             'Bezieht sich das Präpositionalobjekt auf eine Sache, ersetzt man es durch „da(r)+Präposition“ (darauf, damit, dafür) bzw. fragt mit „wo(r)+Präposition“ (worauf, womit). Bei Personen bleibt die Präposition + Pronomen.',
+          einfach:
+            'Geht es um eine Sache, sagst du „darauf, damit, dafür“ statt „auf das“ usw. Frage: „Worauf wartest du?“ – „Darauf.“ Bei Personen bleibt es: „auf ihn“.',
           beispiel: 'Worauf wartest du? — Auf den Bus. → Ich warte darauf. Aber: Auf wen? → Auf ihn.',
         },
         {
           titel: 'Präpositionalobjekt + „dass“-Satz / Infinitiv',
           erklaerung:
             'Folgt dem Präpositionalobjekt ein Nebensatz, kündigt ein „da(r)+Präposition“-Korrelat ihn im Hauptsatz an: „Ich freue mich darauf, dass …“ / „… darauf, dich zu sehen.“',
+          einfach:
+            'Vor einem Nebensatz kündigst du ihn mit „da(r)-“ an: „Ich freue mich darauf, dass du kommst.“ / „Denk daran, das Licht auszumachen.“',
           beispiel: 'Wir rechnen damit, dass es teurer wird. — Er besteht darauf, recht zu behalten.',
         },
       ],
@@ -939,24 +1067,32 @@ const modulC: Modul = {
           titel: '„nicht“ vs. „kein“',
           erklaerung:
             '„kein“ verneint Substantive mit unbestimmtem Artikel oder ohne Artikel (Nullartikel). „nicht“ verneint alles Übrige: Verben, Adjektive, Adverbien und Substantive mit bestimmtem Artikel oder Possessiv.',
+          einfach:
+            '„kein“ verneint ein Hauptwort (ohne bestimmten Artikel): „Ich habe kein Auto.“ „nicht“ verneint den Rest: „Ich komme nicht“ / „Ich mag das Auto nicht.“',
           beispiel: 'Ich habe kein Auto. — Ich habe das Auto nicht (gekauft). — Ich habe nicht mein Auto genommen.',
         },
         {
           titel: 'Stellung von „nicht“ (Satz- vs. Sondernegation)',
           erklaerung:
             'Bei Satznegation steht „nicht“ möglichst weit hinten, aber vor dem, was zum Prädikat gehört (Verbklammer-Teil, Präpositionalobjekt, Adjektivprädikat). Bei Sondernegation steht „nicht“ direkt vor dem betonten Teil.',
+          einfach:
+            'Verneinst du den ganzen Satz, kommt „nicht“ meist ans Ende: „Ich kenne ihn nicht.“ Verneinst du nur ein Wort, steht „nicht“ direkt davor: „nicht heute, sondern morgen.“',
           beispiel: 'Er kommt heute nicht. (Satznegation) — Nicht heute kommt er, sondern morgen. (Sondernegation)',
         },
         {
           titel: 'Fokuspartikeln',
           erklaerung:
             'Fokuspartikeln (nur, auch, sogar, selbst, erst, schon, gerade, ausgerechnet, nicht einmal) heben ein Satzglied hervor und stehen meist unmittelbar davor. Sie verändern die Informationsstruktur und die Wirkung stark.',
+          einfach:
+            'Wörter wie „nur, sogar, selbst, ausgerechnet“ heben genau ein Wort hervor: „Sogar der Chef kam“ (überraschend). Sie verändern die Wirkung stark.',
           beispiel: 'Sogar der Chef kam. — Nur du kannst das. — Ausgerechnet heute regnet es.',
         },
         {
           titel: '„erst“ vs. „schon“ / „nur“ vs. „erst“',
           erklaerung:
             '„schon“ = früher/mehr als erwartet; „erst“ = später/weniger als erwartet (zeitlich) bzw. nicht mehr als (Menge → hier „nur“). Diese feine Erwartungsperspektive ist typisch fortgeschritten.',
+          einfach:
+            '„schon“ = früher/mehr als gedacht („Bist du schon fertig?“), „erst“ = später/weniger als gedacht („Es ist erst 8 Uhr“, „Er ist erst zehn“).',
           beispiel: 'Es ist erst acht Uhr (noch früh). — Es ist schon acht Uhr (schon spät). — Er ist erst zehn (nicht älter).',
         },
       ],
@@ -1000,24 +1136,32 @@ const modulC: Modul = {
           titel: 'Feste Redewendungen (Idiome)',
           erklaerung:
             'Idiome haben eine Gesamtbedeutung, die sich nicht aus den Einzelwörtern ergibt. Sie sind formstabil — man kann Wörter nicht frei austauschen. Falsch verwendet fallen sie sofort auf.',
+          einfach:
+            'Feste Bilder, deren Sinn man nicht aus den Einzelwörtern errät: „jemandem auf den Keks gehen“ = nerven. Wörtlich übersetzen geht schief – lern sie als Ganzes.',
           beispiel: 'jemandem auf den Keks gehen (nerven) — die Katze im Sack kaufen (ungeprüft kaufen)',
         },
         {
           titel: 'Kollokationen',
           erklaerung:
             'Kollokationen sind übliche Wortpartnerschaften, die man so und nicht anders sagt: „eine Entscheidung fällen/treffen“, „Maßnahmen ergreifen“, „ein Risiko eingehen“, „Kritik ernten“. Sie sind das Rückgrat idiomatischen Ausdrucks.',
+          einfach:
+            'Bestimmte Wörter gehören zusammen: man sagt „eine Rede halten“ (nicht „machen“) und „Maßnahmen ergreifen“. Lern diese Paare gleich gemeinsam.',
           beispiel: 'starken Kaffee (nicht: „mächtigen Kaffee“) — eine Rede halten (nicht: „machen“)',
         },
         {
           titel: 'Sprichwörter und geflügelte Worte',
           erklaerung:
             'Sprichwörter verdichten Erfahrungswissen in feste Sätze; geflügelte Worte stammen oft aus Literatur oder Geschichte. Souverän eingesetzt geben sie einer Aussage Autorität und Charme.',
+          einfach:
+            'Feste Sätze mit Lebensweisheit: „Wer A sagt, muss auch B sagen.“ Gut platziert wirken sie klug – aber sparsam einsetzen.',
           beispiel: 'Wer A sagt, muss auch B sagen. — Der Klügere gibt nach. — Ende gut, alles gut.',
         },
         {
           titel: 'Register der Idiomatik',
           erklaerung:
             'Redewendungen sind stark registergebunden: „ins Gras beißen“ (salopp) vs. „von uns gehen“ (gehoben) für dasselbe. Wer das Register verwechselt, wirkt unfreiwillig komisch oder unpassend.',
+          einfach:
+            'Für dasselbe gibt es lockere und feine Ausdrücke: „die Nase voll haben“ (salopp) vs. „genug haben“. Pass auf, dass der Ton zur Situation passt.',
           beispiel: 'salopp: die Nase voll haben — neutral: genug haben — gehoben: einer Sache überdrüssig sein',
         },
       ],
@@ -1061,24 +1205,32 @@ const modulC: Modul = {
           titel: 'Die Stilebenen',
           erklaerung:
             'Deutsch kennt grob vier Register: salopp/umgangssprachlich (locker, unter Vertrauten), neutral/standardsprachlich (Alltag, Beruf), gehoben/formell (offiziell, schriftlich) und fachsprachlich. Dasselbe Gemeinte wird je nach Register anders gesagt.',
+          einfach:
+            'Es gibt lockeres, normales und formelles Deutsch: „kriegen“ (locker) – „bekommen“ (normal) – „erhalten“ (formell). Alle meinen dasselbe.',
           beispiel: 'salopp: kriegen — neutral: bekommen — gehoben: erhalten',
         },
         {
           titel: 'Wortwahl signalisiert Register',
           erklaerung:
             'Lateinisch-fremdsprachige und abstrakte Wörter wirken gehobener, kurze germanische Wörter neutraler bis lockerer. Die Wahl steuert die Distanz und Formalität feiner als die Grammatik.',
+          einfach:
+            'Lange Fremdwörter klingen formeller, kurze Alltagswörter lockerer: „anfangen“ (normal) – „beginnen“ (feiner) – „in Angriff nehmen“ (formell).',
           beispiel: 'anfangen (neutral) vs. beginnen (leicht gehoben) vs. in Angriff nehmen (formell)',
         },
         {
           titel: 'Syntax und Register',
           erklaerung:
             'Kurze Hauptsätze, Ellipsen und Modalpartikeln kennzeichnen die gesprochene, lockere Ebene. Lange, hypotaktische Sätze mit Nominalisierungen und Passiv gehören zur formell-schriftlichen Ebene.',
+          einfach:
+            'Kurze Sätze mit „doch/mal“ klingen gesprochen und locker. Lange, verschachtelte Sätze mit vielen Hauptwörtern klingen schriftlich und formell.',
           beispiel: 'salopp: „Mach ich morgen.“ — formell: „Die Erledigung erfolgt am morgigen Tag.“',
         },
         {
           titel: 'Anrede und Höflichkeit',
           erklaerung:
             'Das Register zeigt sich auch in der Anrede (du/ihr vs. Sie), in Grußformeln und in der Konjunktiv-II-Höflichkeit. Ein Registerbruch (zu locker oder zu steif für die Situation) wirkt unpassend.',
+          einfach:
+            'Register zeigt sich auch in „du“ vs. „Sie“ und im Ton. Eine förmliche Mail beginnt nicht mit „Hey“. Halte die Ebene durch, sonst wirkt es schief.',
           beispiel: 'salopp: „Hey, kannst du …?“ — formell: „Sehr geehrte Frau X, könnten Sie …?“',
         },
       ],
@@ -1122,30 +1274,40 @@ const modulC: Modul = {
           titel: 'These, Begründung, Beleg',
           erklaerung:
             'Ein tragfähiges Argument gliedert sich in Behauptung (These), Begründung und Beleg/Beispiel. Sprachlich strukturiert man das mit Konnektoren: „Ich vertrete die Auffassung, dass … Denn … Ein Beispiel dafür ist …“.',
+          einfach:
+            'Ein gutes Argument: erst deine Meinung, dann der Grund, dann ein Beispiel. „Ich finde X. Denn Y. Zum Beispiel Z.“ Mit „erstens, zweitens“ ordnest du es.',
           beispiel: 'Erstens spart das Kosten. Zweitens erhöht es die Qualität. Folglich lohnt sich die Investition.',
         },
         {
           titel: 'Konzession (Einräumung)',
           erklaerung:
             'Konzessives Argumentieren räumt einen Gegeneinwand ein, um ihn dann zu entkräften — das wirkt souverän und fair. Marker: „zwar … aber“, „gewiss/freilich …, dennoch“, „so … auch“, „zugegeben, … gleichwohl“.',
+          einfach:
+            'Erst dem anderen recht geben, dann kontern – das wirkt fair und stark: „Zwar ist es teuer, aber es lohnt sich.“',
           beispiel: 'Zwar ist der Weg teurer, aber er ist langfristig der einzig gangbare.',
         },
         {
           titel: 'Einschränkung und Relativierung',
           erklaerung:
             'Mit „allerdings“, „freilich“, „insofern … als“, „bis zu einem gewissen Grad“, „in gewisser Hinsicht“ differenzieren Sie, statt pauschal zu urteilen. Das signalisiert Urteilskraft und nimmt Angriffsfläche.',
+          einfach:
+            'Statt „immer/nie“ lieber vorsichtig: „allerdings“, „in gewisser Hinsicht“, „meistens“. So bist du schwerer angreifbar und wirkst überlegter.',
           beispiel: 'Der Plan überzeugt — allerdings nur unter der Voraussetzung, dass die Finanzierung steht.',
         },
         {
           titel: 'Widerlegung und Gegenposition',
           erklaerung:
             'Um eine Gegenposition zu entkräften, benennt man sie fair und setzt dann den eigenen Einwand: „Es mag zwar stimmen, dass …, jedoch übersieht dieser Einwand …“ / „Dem ist entgegenzuhalten, dass …“.',
+          einfach:
+            'Nenne den Gegen-Einwand fair und entkräfte ihn dann: „Man könnte sagen, es sei zu teuer. Dagegen spricht aber, dass …“.',
           beispiel: 'Man könnte einwenden, dass … Dem ist jedoch entgegenzuhalten, dass …',
         },
         {
           titel: 'Schlussfolgerung und Fazit',
           erklaerung:
             'Zum Abschluss bündelt man die Argumente mit folgernden Konnektoren: „folglich“, „mithin“, „daher“, „alles in allem“, „unterm Strich“, „somit lässt sich festhalten, dass …“.',
+          einfach:
+            'Am Ende bündelst du alles: „Alles in allem …“, „folglich …“, „unterm Strich …“. Das rundet dein Argument ab.',
           beispiel: 'Alles in allem überwiegen die Vorteile; daher plädiere ich für den Vorschlag.',
         },
       ],
